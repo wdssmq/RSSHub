@@ -1,5 +1,5 @@
 ({
-    '8world.com': { _name: '8视界', '.': [{ title: '分类', docs: 'https://docs.rsshub.app/new-media.html#_8-shi-jie-fen-lei', source: ['/:category', '/'], target: '/8world/:category?' }] },
+    // '8world.com': { _name: '8视界', '.': [{ title: '分类', docs: 'https://docs.rsshub.app/new-media.html#_8-shi-jie-fen-lei', source: ['/:category', '/'], target: '/8world/:category?' }] },
     'aamacau.com': { _name: '論盡媒體 AllAboutMacau Media', '.': [{ title: '话题', docs: 'https://docs.rsshub.app/new-media.html#lun-jin-mei-ti-allaboutmacau-media-hua-ti', source: ['/'], target: '/:category?/:id?' }] },
     'eprice.com.tw': { _name: 'ePrice', '.': [{ title: 'ePrice 比價王', docs: 'https://docs.rsshub.app/new-media.html#eprice', source: ['/'], target: '/:region?' }] },
     'eprice.com.hk': { _name: 'ePrice', '.': [{ title: 'ePrice 香港', docs: 'https://docs.rsshub.app/new-media.html#eprice', source: ['/'], target: '/:region?' }] },
@@ -728,20 +728,6 @@
     },
     'huya.com': { _name: '虎牙直播', '.': [{ title: '直播间开播', docs: 'https://docs.rsshub.app/live.html#hu-ya-zhi-bo-zhi-bo-jian-kai-bo', source: '/:id', target: '/huya/live/:id' }] },
     'craigslist.org': { _name: 'Craigslist', '.': [{ title: '商品搜索列表', docs: 'https://docs.rsshub.app/shopping.html#craigslist' }] },
-    'saraba1st.com': {
-        _name: 'Saraba1st',
-        bbs: [
-            {
-                title: '帖子',
-                docs: 'https://docs.rsshub.app/bbs.html#saraba1st',
-                source: '/2b/:id',
-                target: (params) => {
-                    const id = params.id.includes('thread') ? params.id.split('-')[1] : '';
-                    return id ? `/saraba1st/thread/${id}` : '';
-                },
-            },
-        ],
-    },
     'scboy.com': {
         _name: 'scboy 论坛',
         www: [
