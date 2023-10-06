@@ -141,11 +141,11 @@ dependencies:
     specifier: 2.3.0
     version: 2.3.0
   puppeteer:
-    specifier: 21.3.4
-    version: 21.3.4
+    specifier: 21.3.8
+    version: 21.3.8
   puppeteer-extra:
     specifier: 3.3.6
-    version: 3.3.6(puppeteer@21.3.4)
+    version: 3.3.6(puppeteer@21.3.8)
   puppeteer-extra-plugin-stealth:
     specifier: 2.11.2
     version: 2.11.2(puppeteer-extra@3.3.6)
@@ -1165,7 +1165,7 @@ packages:
       '@babel/runtime-corejs2': 7.22.11
       '@postlight/ci-failed-test-reporter': 1.0.26
       cheerio: 0.22.0
-      difflib: github.com/postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed
+      difflib: git/github.com+postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed
       ellipsize: 0.1.0
       iconv-lite: 0.5.0
       moment: 2.29.4
@@ -2428,8 +2428,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chromium-bidi@0.4.28(devtools-protocol@0.0.1179426):
-    resolution: {integrity: sha512-2HZ74QlAApJrEwcGlU/sUu0s4VS+FI3CJ09Toc9aE9VemMyhHZXeaROQgJKNRaYMUTUx6qIv1cLBs3F+vfgjSw==}
+  /chromium-bidi@0.4.31(devtools-protocol@0.0.1179426):
+    resolution: {integrity: sha512-OtvEg2JMRQrHsmLx4FV3u1Hf9waYxB5PmL+yM0HkFpc9H2x3TMbUqS+GP2/fC4399hzOO+EQF8uVU43By9ILag==}
     peerDependencies:
       devtools-protocol: '*'
     dependencies:
@@ -6495,12 +6495,12 @@ packages:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
 
-  /puppeteer-core@21.3.4:
-    resolution: {integrity: sha512-iaG7ScTXOm9hlsBTBGGtr5dAAsA8IiWTx8E0Ghr0b5Ntl42bdcPS8EXjcERKocDhua2YqdlnFGs/cBxHY+VNyA==}
+  /puppeteer-core@21.3.8:
+    resolution: {integrity: sha512-yv12E/+zZ7Lei5tJB4sUkSrsuqKibuYpYxLGbmtLUjjYIqGE5HKz9OUI2I/RFHEvF+pHi2bTbv5bWydeCGJ6Mw==}
     engines: {node: '>=16.3.0'}
     dependencies:
       '@puppeteer/browsers': 1.7.1
-      chromium-bidi: 0.4.28(devtools-protocol@0.0.1179426)
+      chromium-bidi: 0.4.31(devtools-protocol@0.0.1179426)
       cross-fetch: 4.0.0
       debug: 4.3.4
       devtools-protocol: 0.0.1179426
@@ -6525,7 +6525,7 @@ packages:
         optional: true
     dependencies:
       debug: 4.3.4
-      puppeteer-extra: 3.3.6(puppeteer@21.3.4)
+      puppeteer-extra: 3.3.6(puppeteer@21.3.8)
       puppeteer-extra-plugin: 3.2.3(puppeteer-extra@3.3.6)
       puppeteer-extra-plugin-user-preferences: 2.4.1(puppeteer-extra@3.3.6)
     transitivePeerDependencies:
@@ -6546,7 +6546,7 @@ packages:
     dependencies:
       debug: 4.3.4
       fs-extra: 10.1.0
-      puppeteer-extra: 3.3.6(puppeteer@21.3.4)
+      puppeteer-extra: 3.3.6(puppeteer@21.3.8)
       puppeteer-extra-plugin: 3.2.3(puppeteer-extra@3.3.6)
       rimraf: 3.0.2
     transitivePeerDependencies:
@@ -6567,7 +6567,7 @@ packages:
     dependencies:
       debug: 4.3.4
       deepmerge: 4.3.1
-      puppeteer-extra: 3.3.6(puppeteer@21.3.4)
+      puppeteer-extra: 3.3.6(puppeteer@21.3.8)
       puppeteer-extra-plugin: 3.2.3(puppeteer-extra@3.3.6)
       puppeteer-extra-plugin-user-data-dir: 2.4.1(puppeteer-extra@3.3.6)
     transitivePeerDependencies:
@@ -6589,12 +6589,12 @@ packages:
       '@types/debug': 4.1.8
       debug: 4.3.4
       merge-deep: 3.0.3
-      puppeteer-extra: 3.3.6(puppeteer@21.3.4)
+      puppeteer-extra: 3.3.6(puppeteer@21.3.8)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /puppeteer-extra@3.3.6(puppeteer@21.3.4):
+  /puppeteer-extra@3.3.6(puppeteer@21.3.8):
     resolution: {integrity: sha512-rsLBE/6mMxAjlLd06LuGacrukP2bqbzKCLzV1vrhHFavqQE/taQ2UXv3H5P0Ls7nsrASa+6x3bDbXHpqMwq+7A==}
     engines: {node: '>=8'}
     peerDependencies:
@@ -6612,19 +6612,19 @@ packages:
       '@types/debug': 4.1.8
       debug: 4.3.4
       deepmerge: 4.3.1
-      puppeteer: 21.3.4
+      puppeteer: 21.3.8
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /puppeteer@21.3.4:
-    resolution: {integrity: sha512-kE67k1KR6hQs3g0Yf/i3GYOhTU8zC2dtcpHhtcSC9bGoVxRgqDo/hwVkDqlNKxJsJHuVX+qviWC7F0FdSjcFTA==}
+  /puppeteer@21.3.8:
+    resolution: {integrity: sha512-4OrInVIAtDgcznENUV4Du4gYSZhRmbCkckvOoPstXrUH4JsQ3atSegY+9f/tOKCDB2qh7sXaszDcFEn+RymY0g==}
     engines: {node: '>=16.3.0'}
     requiresBuild: true
     dependencies:
       '@puppeteer/browsers': 1.7.1
       cosmiconfig: 8.3.6
-      puppeteer-core: 21.3.4
+      puppeteer-core: 21.3.8
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -8151,8 +8151,8 @@ packages:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true
 
-  github.com/postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+  git/github.com+postlight/difflib.js/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+    resolution: {commit: 32e8e38c7fcd935241b9baab71bb432fd9b166ed, repo: git@github.com:postlight/difflib.js.git, type: git}
     name: difflib
     version: 0.2.6
     dependencies:
